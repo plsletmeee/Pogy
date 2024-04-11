@@ -3,6 +3,7 @@ const path = require("node:path");
 const { REST } = require("@discordjs/rest");
 const { Routes } = require("discord-api-types/v9");
 const { clientId } = require("../config.json")
+const { token } = require("../config.json")
 const { green } = require("colors");
 
 
@@ -19,7 +20,7 @@ for(const folder of commandFolders) {
 }
 
 
-const rest = new REST({ version: '9' }).setToken(process.env.TOKEN);
+const rest = new REST({ version: '9' }).setToken(token);
 
 rest.put(Routes.applicationCommands(clientId), { body: commands })
 .then(() => console.log('Successfully registered application commands.'))

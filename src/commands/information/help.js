@@ -41,7 +41,7 @@ module.exports = class extends Command {
       owner: `${emojis.owner}`,
     };
 
-    const green = "<:purple:826033456207233045>";
+    const green = "<:uo_BotMarketing:1081977104322789437>";
     const red = "<:redsquare:803527843661217802>";
 
     const embed = new MessageEmbed().setColor("PURPLE");

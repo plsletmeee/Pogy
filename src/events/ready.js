@@ -13,7 +13,7 @@ module.exports = class extends Event {
     Message(this.client);
 
     new Handler(this.client, {
-      commandFolder: "./src/slash",
+      commandFolder: "./src/slashCommands",
       commandType: "file",
       allSlash: true,
       handleSlash: true,
